@@ -4,12 +4,13 @@ import bcrypt from "bcryptjs";
 import { sendVerificationEmail } from "@/helpers/sendVerificationEmail";
 import { SourceCode } from "eslint";
 import { isNativeError } from "util/types";
-import { messageSchema } from "@/model/schemas/messageSchema";
+import { messageSchema } from "@/schemas/messageSchema";
 import { CLIENT_STATIC_FILES_RUNTIME_REACT_REFRESH } from "next/dist/shared/lib/constants";
 
 
  export async function POST (request  : Request ) {
     await dbConnect() 
+    console.log("reached here")
     try {
         const {username , email , password } = await request.json()
         const existingUserVerifiedByUsername = await UserModel.findOne(
