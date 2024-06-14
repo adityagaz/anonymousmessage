@@ -14,7 +14,6 @@ async function dbConnect() : Promise<void> {
         return 
     }
 
-
     try {
         const db = await mongoose.connect(process.env.MONGODB_URI || '' , {})
         //if url is not available empty string is passed to fetch the error

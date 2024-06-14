@@ -14,8 +14,8 @@
     "mongoose": "^8.4.1",
     "next": "14.2.3",
     "next-auth": "^4.24.7",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-email": "2.1.4",
     "resend": "^3.2.0",
     "zod": "^3.23.8"
